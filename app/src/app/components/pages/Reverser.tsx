@@ -52,8 +52,8 @@ export default function Reverser(){
                 />
             <br /><br />
             {urls.map((url,i) => <div style={{fontSize: '1.4rem'}}>
-                <a href={url} download={names[i]+'(R)'}>
-                    {names[i]+'(R)'}
+                <a href={url} download={names[i].split('.csv')[0]+'(R).csv'}>
+                    {names[i].split('.csv')[0]+'(R).csv'}
                 </a> 
             </div>)}
         </div>
